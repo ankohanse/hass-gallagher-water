@@ -1,0 +1,27 @@
+name: Zip Release
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  release:
+    name: Gallager-Water release
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Create Zip
+        run: |
+          cd "${{ github.workspace }}/custom_components/gallagher_water"
+          zip -r gallagher_water.zip ./
+
+      - name: Upload Zip to Release
+        uses: softprops/action-gh-release@v2.2.1
+        with:
+          files: ${{ github.workspace }}/custom_components/gallagher_water/gallagher_water.zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

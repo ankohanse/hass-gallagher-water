@@ -1,0 +1,6 @@
+{
+  "domain": "gallagher_water",
+  "name": "Gallagher Water",
+  "integration_type": "virtual",
+  "supported_by": "smartwater"
+}
