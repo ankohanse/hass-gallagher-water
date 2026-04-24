@@ -93,12 +93,12 @@ Sensors are registered to each device as `sensor.{device_id}_{sensor_name}` with
 
 
 # Troubleshooting
-Please set your logging for the this custom component to debug during initial setup phase. If everything works well, you are safe to remove the debug logging. Note that the component uses the smartwater integration.
+Please set your logging for the this custom component to debug during initial setup phase. If everything works well, you are safe to remove the debug logging.
 
 ```yaml
 logger:
   default: warn
   logs:
-    custom_components.smartwater: debug
+    custom_components.gallager_water: debug
 ```
 

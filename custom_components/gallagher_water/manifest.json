@@ -1,6 +1,17 @@
 {
   "domain": "gallagher_water",
   "name": "Gallagher Water",
-  "integration_type": "virtual",
-  "supported_by": "smartwater"
+  "codeowners": [ "@ankohanse" ],
+  "config_flow": true,
+  "dependencies": [],
+  "documentation": "https://github.com/ankohanse/hass-gallagher-water",
+  "integration_type": "hub",
+  "iot_class": "cloud_push",
+  "issue_tracker": "https://github.com/ankohanse/hass-gallagher-water/issues",
+  "loggers": ["custom_components.gallagher_water"],
+  "requirements": [
+    "pysmartwater>=1.1.1,<2.0.0",
+    "jsonata-python>=0.2.5,<1.0.0"
+  ],
+  "version": "2026.05.1"
 }
