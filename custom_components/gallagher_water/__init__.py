@@ -20,14 +20,15 @@ from homeassistant.helpers.translation import async_get_translations
 from homeassistant.const import (
     CONF_USERNAME,
 )
-from .coordinator import (
+
+from .shared.coordinator import (
     SmartWaterCoordinatorFactory,
     SmartWaterCoordinator
 )
-
 from .const import (
     DOMAIN,
     PLATFORMS,
+    API_CONTEXT,
     CONF_PROFILE_ID,
     CONF_PROFILE_NAME,
 )
@@ -50,7 +51,7 @@ async def async_setup(hass: HomeAssistant, config: ConfigType) -> bool:
 
 
 async def async_setup_entry(hass: HomeAssistant, config_entry: ConfigEntry) -> bool:
-    """Set up Smart Water from a config entry."""
+    """Set up Gallagher Water from a config entry."""
     
     # Assign the HA configured log level of this module to the pysmartwater module
     log_level: int = _LOGGER.getEffectiveLevel()

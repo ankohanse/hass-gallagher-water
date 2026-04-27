@@ -41,17 +41,17 @@ from .const import (
     STATUS_VALIDITY_PERIOD,
     utcnow,
 )
-from .coordinator import (
+from .shared.coordinator import (
     SmartWaterCoordinator,
 )
-from .data import (
+from .shared.data import (
     SmartWaterData,
     SmartWaterDeviceConfig,
 )
-from .entity_base import (
+from .shared.entity_base import (
     SmartWaterEntity,
 )
-from .entity_helper import (
+from .shared.entity_helper import (
     SmartWaterEntityHelper,
 )
 

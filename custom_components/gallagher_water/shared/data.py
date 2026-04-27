@@ -1,3 +1,9 @@
+"""
+Data definitions for Smart Water and Gallagher Water integrations.
+
+Note that this file is shared as is between the two integrations. 
+Do not place code that is specific to only one of these integration in here!
+"""
 import logging
 
 from dataclasses import asdict, dataclass
@@ -7,7 +13,7 @@ from typing import Any
 
 from homeassistant.const import Platform
 
-from .const import (
+from ..const import (
     PLATFORM_TO_PF,
 )
 

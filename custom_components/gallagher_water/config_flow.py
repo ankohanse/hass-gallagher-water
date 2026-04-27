@@ -36,19 +36,17 @@ from .const import (
     CONF_PROFILE_NAME,
 )
 
-from .coordinator import (
+from .shared.coordinator import (
     SmartWaterCoordinatorFactory,
     SmartWaterCoordinator,
 )
-from .data import (
+from .shared.data import (
     SmartWaterData,
     SmartWaterDeviceConfig,
 )
 
 _LOGGER = logging.getLogger(__name__)
 
-# internal consts only used in config flow
-CONF_ROLE_MENU = "role_menu"
 
 @config_entries.HANDLERS.register("gallagher_water")
 class ConfigFlowHandler(config_entries.ConfigFlow, domain=DOMAIN):

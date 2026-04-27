@@ -5,8 +5,12 @@ import logging
 from homeassistant.const import (
     CONF_USERNAME,
     CONF_PASSWORD,
+    Platform,
 )
-from homeassistant.const import Platform
+
+from pysmartwater import (
+    SmartWaterApiContext,
+)
 
 
 _LOGGER: logging.Logger = logging.getLogger(__package__)
@@ -51,6 +55,7 @@ BINARY_SENSOR_VALUES_ON = [True, 1, '1']
 BINARY_SENSOR_VALUES_OFF = [False, 0, '0']
 BINARY_SENSOR_VALUES_ALL = BINARY_SENSOR_VALUES_ON + BINARY_SENSOR_VALUES_OFF
 
+API_CONTEXT = SmartWaterApiContext.GALLAGHER
 API_RETRY_ATTEMPTS = 2
 API_RETRY_DELAY = 5    # seconds
 

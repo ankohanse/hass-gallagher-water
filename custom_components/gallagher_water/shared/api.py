@@ -1,4 +1,9 @@
-"""api.py: API for Smart Water  integration."""
+"""
+API for Smart Water and Gallagher Water integrations.
+
+Note that this file is shared as is between the two integrations. 
+Do not place code that is specific to only one of these integration in here!
+"""
 
 import asyncio
 from dataclasses import asdict
@@ -20,9 +25,10 @@ from pysmartwater import (
     SmartWaterAuthError,
 ) 
 
-from .const import (
+from ..const import (
     DOMAIN,
     API,
+    API_CONTEXT,
     API_RETRY_ATTEMPTS,
     API_RETRY_DELAY,
     STORE_KEY_CACHE,
@@ -127,7 +133,7 @@ class SmartWaterApiWrap(AsyncSmartWaterApi):
         client: httpx.AsyncClient = create_async_httpx_client(hass) 
         
         # Initialize the actual api
-        context = SmartWaterApiContext.GALLAGHER
+        context = API_CONTEXT
         flags = {
             SmartWaterApiFlag.REFRESH_HANDLER_START: True if not is_temp else False,
             SmartWaterApiFlag.DIAGNOSTICS_COLLECT: True

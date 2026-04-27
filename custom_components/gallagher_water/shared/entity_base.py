@@ -1,3 +1,9 @@
+"""
+Base class for entities in the Smart Water and Gallagher Water integrations.
+
+Note that this file is shared as is between the two integrations. 
+Do not place code that is specific to only one of these integration in here!
+"""
 import logging
 import re
 
@@ -27,7 +33,7 @@ from homeassistant.const import UnitOfTime
 from homeassistant.helpers.entity import DeviceInfo
 from homeassistant.helpers.restore_state import ExtraStoredData, RestoreEntity
 
-from .const import (
+from ..const import (
     DOMAIN,
     ATTR_DATA_VALUE,
     ATTR_STORED_DATA_VALUE,
