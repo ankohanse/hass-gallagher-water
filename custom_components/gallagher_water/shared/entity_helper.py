@@ -13,10 +13,6 @@ from homeassistant.helpers.entity_platform import AddEntitiesCallback
 
 import homeassistant.helpers.entity_registry as entity_registry
 
-from ..const import (
-    PLATFORMS,
-    BINARY_SENSOR_VALUES_ALL,
-)
 from .coordinator import (
     SmartWaterCoordinatorFactory,
     SmartWaterCoordinator

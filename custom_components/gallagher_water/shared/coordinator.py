@@ -47,8 +47,6 @@ from .api import (
 )
 from .data import (
     SmartWaterData,
-    SmartWaterDataFamily,
-    SmartWaterDataKey,
     SmartWaterDeviceConfig,
 )
 

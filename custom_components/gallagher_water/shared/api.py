@@ -31,15 +31,10 @@ from ..const import (
     API_CONTEXT,
     API_RETRY_ATTEMPTS,
     API_RETRY_DELAY,
-    STORE_KEY_CACHE,
-    STORE_WRITE_PERIOD_CACHE,
-    utcnow,
-    utcmin,
 )
 from .data import (
     SmartWaterData,
     SmartWaterDataFamily,
-    SmartWaterDataKey,
     SmartWaterDeviceConfig,
 )
 

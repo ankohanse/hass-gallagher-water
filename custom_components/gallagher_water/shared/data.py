@@ -13,10 +13,6 @@ from typing import Any
 
 from homeassistant.const import Platform
 
-from ..const import (
-    PLATFORM_TO_PF,
-)
-
 
 # Define logger
 _LOGGER = logging.getLogger(__name__)
@@ -27,6 +23,14 @@ OPT_TREND_LEVEL = {
     '1':'up', '2':'up', '3':'up', '4':'up', '5':'up',
     '-1': 'down', '-2':'down', '-3':'down', '-4':'down', '-5': 'down',
 }
+
+
+# Map platform to pf codes for both enabled and disabled entities
+PLATFORM_TO_PF: dict[Platform, str] = {
+    Platform.SENSOR:        "sen",
+    Platform.BINARY_SENSOR: "bin",
+}
+PLATFORMS = list(PLATFORM_TO_PF.keys())
 
 
 @dataclass

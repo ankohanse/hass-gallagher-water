@@ -21,13 +21,6 @@ DOMAIN = "gallagher_water"
 NAME = "Gallagher Water"
 ISSUE_URL = "https://github.com/ankohanse/hass-gallagher-water/issues"
 
-# Map platform to pf codes for both enabled and disabled entities
-PLATFORM_TO_PF: dict[Platform, str] = {
-    Platform.SENSOR:        "sen",
-    Platform.BINARY_SENSOR: "bin",
-}
-PLATFORMS = list(PLATFORM_TO_PF.keys())
-
 HUB = "Hub"
 API = "Api"
 COORDINATOR = "Coordinator"

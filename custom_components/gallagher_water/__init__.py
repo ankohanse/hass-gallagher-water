@@ -21,16 +21,18 @@ from homeassistant.const import (
     CONF_USERNAME,
 )
 
+from .const import (
+    DOMAIN,
+    API_CONTEXT,
+    CONF_PROFILE_ID,
+    CONF_PROFILE_NAME,
+)
 from .shared.coordinator import (
     SmartWaterCoordinatorFactory,
     SmartWaterCoordinator
 )
-from .const import (
-    DOMAIN,
+from .shared.data import (
     PLATFORMS,
-    API_CONTEXT,
-    CONF_PROFILE_ID,
-    CONF_PROFILE_NAME,
 )
 
 
