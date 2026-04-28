@@ -35,24 +35,10 @@ Until that time, you can add it as a HACS custom repository:
 6. Follow the UI based [Configuration](#configuration)
 
 ## Manual install
-1. Under the `<config directory>/custom_components/` directory create a directory called `gallagher_water`. 
-Copying all files in `/custom_components/gallagher_water/` folder from this repo into the new `<config directory>/custom_components/gallagher_water/` directory you just created.
-
-    This is how your custom_components directory should look like:
-
-    ```bash
-    custom_components
-    ├── gallagher_water
-    │   ├── brands
-    │   │   ├── icon.png
-    │   │   ├── logo.png
-    │   │   └── logo@2x.png
-    │   ├── __init__.py
-    │   └── manifest.json  
-    ```
-
-2. Restart Home Assistant.
-3. Follow the UI based [Configuration](#configuration)
+1. Under the `<config directory>/custom_components/` directory create a directory called `gallagher_water`.
+2. Copy all files and subfolders within `gallagher_water.zip` into the new `<config directory>/custom_components/gallagher_water/` directory you just created.
+3. Restart Home Assistant.
+4. Follow the UI based [Configuration](#configuration)
 
 # Configuration
 To start the setup of this custom integration:
