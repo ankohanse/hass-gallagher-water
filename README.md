@@ -1,7 +1,6 @@
 [![version](https://img.shields.io/github/v/release/ankohanse/hass-gallagher-water?style=for-the-badge)](https://github.com/ankohanse/hass-gallagher-water)
 [![hacs_badge](https://img.shields.io/badge/HACS-Pending-red.svg?style=for-the-badge)](https://github.com/custom-components/hacs)
 [![maintained](https://img.shields.io/maintenance/yes/2026?style=for-the-badge)](https://github.com/ankohanse/hass-gallagher-water)
-<br/>
 [![license](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](https://github.com/ankohanse/hass-gallagher-water/blob/main/LICENSE)
 [![buy_me_a_coffee](https://img.shields.io/badge/If%20you%20like%20it-Buy%20me%20a%20coffee-yellow.svg?style=for-the-badge)](https://www.buymeacoffee.com/ankohanse)
 
@@ -25,14 +24,12 @@ Before using this library, the Gallagher Water app must have been used to link t
 # Installation
 
 ## HACS
-This custom integration is waiting to be included into the HACS default integrations.
-Until that time, you can add it as a HACS custom repository:
-1. In the HACS page, press the three dots at the top right corner.
-2. Select 'Custom Repositories'
-3. Enter repository "https://github.com/ankohanse/hass-gallagher-water" (with the quotes seems to work better)
-4. Select category 'integration' and press 'Add'
-5. Restart Home Assistant.
-6. Follow the UI based [Configuration](#configuration)
+This custom integration is available via HACS (Home Assistant Community Store).
+1. In the HACS page, seach for 'gallagher'.
+2. Click on the found item to display this readme (this page).
+3. At the bottom of the page press 'Download'
+4. Restart Home Assistant.
+5. Follow the UI based [Configuration](#configuration)
 
 ## Manual install
 1. Under the `<config directory>/custom_components/` directory create a directory called `gallagher_water`.
